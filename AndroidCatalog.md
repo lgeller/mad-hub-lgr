@@ -12,7 +12,7 @@ Section One
 ======================
 Name | Demo
 --- | --- | ---
-[widget-one](https://google.com/) | <img src="/assets/android/sample.jpg" width="20%">
+[mp-splash-android](https://github.com/TimeInc/mp-splash-android) | <img src="/assets/android/splash-page-one.png" width="20%">
 [widget-two](https://google.com/) |  <img src="/assets/android/sample.jpg" width="20%"> <img src="http://lorempixel.com/480/800/transport" width="20%">
 [widget-three](https://google.com/) | <img src="http://lorempixel.com/480/800/nature" width="20%"> <img src="http://lorempixel.com/480/800/nightlife" width="20%">
 
