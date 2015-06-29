@@ -1,7 +1,7 @@
 Android Widget Catalog
 ==================
 
-## Index `(light-weight pages)`
+## Index
 * [Material](AndroidCatalog.md#material)
 
 Material
