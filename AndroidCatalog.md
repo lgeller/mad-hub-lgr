@@ -11,8 +11,8 @@ Section One
 Name | Demo
 --- | --- | ---
 [widget-one](https://google.com/) | <img src="/assets/android/sample.jpg" width="49%">
-[widget-two](https://google.com/) | [Apache License V2](https://www.apache.org/licenses/LICENSE-2.0) | <img src="/assets/android/sample.jpg" width="49%"> <img src="http://lorempixel.com/480/800/transport" width="49%">
-[widget-three](https://google.com/) | [Apache License V2](https://www.apache.org/licenses/LICENSE-2.0) | <img src="http://lorempixel.com/480/800/nature" width="49%"> <img src="http://lorempixel.com/480/800/nightlife" width="49%">
+[widget-two](https://google.com/) |  <img src="/assets/android/sample.jpg" width="49%"> <img src="http://lorempixel.com/480/800/transport" width="49%">
+[widget-three](https://google.com/) | <img src="http://lorempixel.com/480/800/nature" width="49%"> <img src="http://lorempixel.com/480/800/nightlife" width="49%">
 
 Section Two
 ======================
