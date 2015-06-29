@@ -10,7 +10,7 @@ Section One
 ======================
 Name | License | Demo
 --- | --- | ---
-[widget-one](https://github.com/makovkastar/FloatingActionButton) | [MIT](http://opensource.org/licenses/MIT) | <img src="http://lorempixel.com/480/800/abstract" width="49%">
+[widget-one](https://github.com/makovkastar/FloatingActionButton) | [MIT](http://opensource.org/licenses/MIT) | <img src="/assets/android/sample.jpg" width="49%">
 [widget-two](https://github.com/futuresimple/android-floating-action-button) | [Apache License V2](https://www.apache.org/licenses/LICENSE-2.0) | <img src="/assets/android/sample.jpg" width="49%"> <img src="http://lorempixel.com/480/800/transport" width="49%">
 [widget-three](https://github.com/futuresimple/android-floating-action-button) | [Apache License V2](https://www.apache.org/licenses/LICENSE-2.0) | <img src="http://lorempixel.com/480/800/nature" width="49%"> <img src="http://lorempixel.com/480/800/nightlife" width="49%">
 
