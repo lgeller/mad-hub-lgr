@@ -1,7 +1,7 @@
 Android Widget Catalog
 ==================
 
-A collection of android widgets.
+A collection of Android widgets.
 
 ## Index
 * [Section One](AndroidCatalog.md#section-one)
