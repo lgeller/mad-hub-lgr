@@ -20,4 +20,4 @@ Name | License | Demo
 --- | --- | ---
 [widget-one](https://github.com/makovkastar/FloatingActionButton) | [MIT](http://opensource.org/licenses/MIT) | <img src="http://lorempixel.com/400/200/fashion" width="49%">
 [widget-two](https://github.com/futuresimple/android-floating-action-button) | [Apache License V2](https://www.apache.org/licenses/LICENSE-2.0) | <img src="http://lorempixel.com/400/200" width="49%"> <img src="http://lorempixel.com/400/200/business" width="49%">
-[widget-three](https://github.com/futuresimple/android-floating-action-button) | [Apache License V2](https://www.apache.org/licenses/LICENSE-2.0) | <img src="http://lorempixel.com/200/800/technics" width="49%"> <img src="http://lorempixel.com/400/800/cats" width="49%">
+[widget-three](https://github.com/futuresimple/android-floating-action-button) | [Apache License V2](https://www.apache.org/licenses/LICENSE-2.0) | <img src="http://lorempixel.com/200/400/technics" width="49%"> <img src="http://lorempixel.com/400/800/cats" width="49%">
