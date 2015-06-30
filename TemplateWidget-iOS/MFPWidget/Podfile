@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MFPWidget' do
+   pod 'Bond'
+end
+
+target 'MFPWidgetTests' do
+   pod 'Bond'
+   pod 'Quick', '~> 0.3.1'
+   pod 'Nimble'
+end

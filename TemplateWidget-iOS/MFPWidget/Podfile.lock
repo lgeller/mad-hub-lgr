@@ -1,0 +1,16 @@
+PODS:
+  - Bond (3.9.0)
+  - Nimble (1.0.0)
+  - Quick (0.3.1)
+
+DEPENDENCIES:
+  - Bond
+  - Nimble
+  - Quick (~> 0.3.1)
+
+SPEC CHECKSUMS:
+  Bond: 994ccc56aebfe2707d7b5e76f6d665a5beefa45b
+  Nimble: 8bee528e5fcc403653076545db562d2b5db7bb87
+  Quick: 824572d3d198d51e52cf4aa722cebf7e59952a35
+
+COCOAPODS: 0.37.2
