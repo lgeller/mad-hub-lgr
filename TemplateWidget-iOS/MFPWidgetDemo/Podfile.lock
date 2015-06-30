@@ -2,13 +2,13 @@ PODS:
   - ExampleWidget (0.0.1)
 
 DEPENDENCIES:
-  - ExampleWidget (from `~/TimeInc/TemplateWidget/MFPWidget`)
+  - ExampleWidget (from `../MFPWidget`)
 
 EXTERNAL SOURCES:
   ExampleWidget:
-    :path: ~/TimeInc/TemplateWidget/MFPWidget
+    :path: ../MFPWidget
 
 SPEC CHECKSUMS:
-  ExampleWidget: 247c3b1755377c4ca32930c6a22a6bad8412c503
+  ExampleWidget: ccb9ff20949fb742bc2fd95514a29730cc30630c
 
 COCOAPODS: 0.37.2
