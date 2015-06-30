@@ -1,0 +1,16 @@
+Explanation
+-----------
+
+	The TemplateWidget-iOS folder provides all the tools needed to easily create new widgets for our mobile platform. It provides a preconfigured framework equipped with Quick/Nimble, as well as a demonstration project that can be used to try out the framework and to edit/develop it on the fly.
+
+
+Installation
+------------
+
+1. Copy the TemplateWidget-iOS folder and rename in the format of mad-<your-widget-name>-ios.
+2. Change MFPWidget/ExampleWidget.podspec to <your-widget-name>.podspec
+3. Alter the contents of this podspec file as needed (do not change the s.source_files property)
+4. Change MFPWidgetDemo/Podfile, 'Example Widget' to '<your-widget-name>'
+5. Run pod install, and open up the workspace.
+
+From here, you'll notice a "Development Pods" folder was generated under the "Pods" project. You can actually make changes to your framework here and they will be reflected in your framework - no need to have a separate xcode project open. If adding new files to the framework, it's very important to keep them in the "Source" directory so they are recognized by the cocoapods installation. After any changes are made, it's best to run a 'pod install' after so the demo project can have it's framework updated.
