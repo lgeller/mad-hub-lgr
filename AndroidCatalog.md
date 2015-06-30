@@ -4,8 +4,14 @@ Android Widget Catalog
 A collection of Android widgets.
 
 ## Index
+* [Preface](AndroidCatalog.md#preface)
 * [Section One](AndroidCatalog.md#section-one)
 * [Section Two](AndroidCatalog.md#section-two)
+
+## Preface 
+* The binaries for widgets are hosted at TBD
+* Repo for template project for starting to build a new widget is at: TBD
+* Repo for template project for starting a new App is at TBD
 
 
 Section One
