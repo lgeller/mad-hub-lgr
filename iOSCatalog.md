@@ -4,9 +4,14 @@ iOS Widget Catalog
 A collection of iOS widgets.
 
 ## Index
+* [Preface](AndroidCatalog.md#preface)
 * [Section One](iOSCatalog.md#section-one)
 * [Section Two](iOSCatalog.md#section-two)
 
+## Preface 
+* The binaries for widgets are hosted at TBD
+* Repo for template project for starting to build a new widget is at: TBD
+* Repo for template project for starting a new App is at TBD
 
 Section One
 ======================
