@@ -14,3 +14,21 @@ Installation
 5. Run pod install, and open up the workspace.
 
 From here, you'll notice a "Development Pods" folder was generated under the "Pods" project. You can actually make changes to the source here and they will be reflected in your framework - no need to have a separate xcode project open. If adding new files to the framework, it's very important to keep them in the "Source" directory so they are recognized by the cocoapods installation. After any changes are made, it's best to run a 'pod install' after so the demo project can have it's framework updated.
+
+Widget Distribution
+-------------------
+
+Once the widget is ready to be consumed, we have to prepare it for distribution:
+
+1. Create a repo of naming convention mad-<widget-name>-ios, and push your code to this repository
+2. Tag your commit with a version number (we can discuss exactly how we want to handle this, if we want to create separate branches for releases, etc)
+3. Copy the podspec file we were dealing with previously, and specify the git repo that we pushed our widget to
+4. Add this podspec to the mad-specs repo with the structure: <widget-name>/<version-number>/<podspec-file>
+
+At this point, the widget should be ready for consumption. You just have to specify at the top of your Podfile:
+
+source 'https://github.com/TimeInc/mad-specs.git'
+
+- and then you just specify your pod as you normally would:
+
+pod '<your-widget-name>'
