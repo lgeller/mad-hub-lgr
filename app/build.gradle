@@ -37,7 +37,7 @@ dependencies {
     compile 'org.glassfish:javax.annotation:10.0-b28'
 
     compile 'io.reactivex:rxjava:1.0.8'
-    compile 'io.reactivex:rxandroid:0.24.0'
+    compile 'io.reactivex:rxandroid:0.25.0'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.5.1'
     compile 'com.fasterxml.jackson.core:jackson-core:2.5.1'
     compile 'com.fasterxml.jackson.core:jackson-annotations:2.5.1'
