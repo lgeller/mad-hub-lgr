@@ -44,11 +44,17 @@ public class LibraryDemoFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_main, container, false);
 
-        MainApplication.getApplicationComponent(getActivity().getApplication()).inject(this);
-
         helloWorldTextView = (TextView) v.findViewById(R.id.text);
         retrofitRxJavaTextView = (TextView) v.findViewById(R.id.retrofitRxJavaText);
         rxJavaObservableTextView = (TextView) v.findViewById(R.id.rxJavaObservableText);
+
+        /*
+        ===============================================
+        DAGGER DEMO
+        ===============================================
+         */
+
+        MainApplication.getApplicationComponent(getActivity().getApplication()).inject(this);
 
         helloWorldTextView.setText(helloWorldString);
 
@@ -57,10 +63,14 @@ public class LibraryDemoFragment extends Fragment {
         VehicleComponent component = DaggerVehicleComponent.create();
         this.vehicle = component.provideVehicle();
 
-        WebComponent webComponent = DaggerWebComponent.create();
-        this.websiteService = webComponent.provideWebsiteAPI();
 
-        WebsiteService.GitHub github = this.websiteService.getGithub();
+
+        /*
+        ===============================================
+        RXJAVA DEMO
+        ===============================================
+         */
+
 
         Observable<String> obsv = Observable.just("Hello world from Observable!");
 
@@ -72,6 +82,16 @@ public class LibraryDemoFragment extends Fragment {
             }
         });
 
+        /*
+        ===============================================
+        DAGGER + RXJAVA + RETROFIT DEMO
+        ===============================================
+         */
+
+        WebComponent webComponent = DaggerWebComponent.create();
+        this.websiteService = webComponent.provideWebsiteAPI();
+        WebsiteService.GitHub github = this.websiteService.getGithub();
+        github.
 
 //      TODO: Fix this
 //        github.contributors("square", "retrofit")
