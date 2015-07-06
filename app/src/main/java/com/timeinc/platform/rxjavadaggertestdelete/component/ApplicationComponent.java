@@ -1,5 +1,6 @@
 package com.timeinc.platform.rxjavadaggertestdelete.component;
 
+import com.timeinc.platform.rxjavadaggertestdelete.LibraryDemoFragment;
 import com.timeinc.platform.rxjavadaggertestdelete.MainActivity;
 import com.timeinc.platform.rxjavadaggertestdelete.module.ApplicationModule;
 
@@ -15,4 +16,5 @@ import dagger.Component;
 @Component(modules = {ApplicationModule.class})
 public interface ApplicationComponent {
     void inject(MainActivity activity);
+    void inject(LibraryDemoFragment fragment);
 }
