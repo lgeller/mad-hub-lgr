@@ -91,7 +91,7 @@ public class LibraryDemoFragment extends Fragment {
         WebComponent webComponent = DaggerWebComponent.create();
         this.websiteService = webComponent.provideWebsiteAPI();
         WebsiteService.GitHub github = this.websiteService.getGithub();
-        github.
+//        github.
 
 //      TODO: Fix this
 //        github.contributors("square", "retrofit")
