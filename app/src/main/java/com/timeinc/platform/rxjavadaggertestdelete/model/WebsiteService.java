@@ -1,23 +1,37 @@
 package com.timeinc.platform.rxjavadaggertestdelete.model;
 
-import java.io.IOException;
 import java.util.List;
 
 import javax.inject.Inject;
 
-import retrofit.Call;
 import retrofit.Retrofit;
 import retrofit.http.GET;
 import retrofit.http.Path;
+import rx.Observable;
+import rx.Subscriber;
 
 /**
  * Created by bparks1271 on 7/5/15.
+ *
+ * Modified from https://github.com/square/retrofit/blob/master/samples/src/main/java/com/example/retrofit/SimpleService.java
  */
 public final class WebsiteService {
 
+    public GitHub getGithub() {
+        return github;
+    }
+
+    GitHub github;
+
     @Inject
     public WebsiteService() {
+        // Create a very simple REST adapter which points the GitHub API.
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(API_URL)
+                .build();
 
+        // Create an instance of our GitHub API interface.
+        github = retrofit.create(GitHub.class);
     }
 
     public static final String API_URL = "https://api.github.com";
@@ -34,28 +48,34 @@ public final class WebsiteService {
 
     public interface GitHub {
         @GET("/repos/{owner}/{repo}/contributors")
-        Call<List<Contributor>> contributors(
+        Observable<List<Contributor>> contributors(
                 @Path("owner") String owner,
                 @Path("repo") String repo);
     }
 
-    public static void main(String... args) throws IOException {
-        // Create a very simple REST adapter which points the GitHub API.
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(API_URL)
-                .build();
+    //Taken from: https://gist.github.com/jooyunghan/f1936ba83d2bb6181a1e
+    private static <T> Observable.Operator<T, List<T>> flattenList() {
+        return new Observable.Operator<T, List<T>>() {
+            @Override
+            public Subscriber<? super List<T>> call(final Subscriber<? super T> subscriber) {
+                return new Subscriber<List<T>>() {
+                    @Override
+                    public void onCompleted() {
+                        subscriber.onCompleted();
+                    }
 
-        // Create an instance of our GitHub API interface.
-        GitHub github = retrofit.create(GitHub.class);
+                    @Override
+                    public void onError(Throwable e) {
+                        subscriber.onError(e);
+                    }
 
-        // Create a call instance for looking up Retrofit contributors.
-        Call<List<Contributor>> call = github.contributors("square", "retrofit");
-
-        // Fetch and print a list of the contributors to the library.
-        List<Contributor> contributors = call.execute().body();
-        for (Contributor contributor : contributors) {
-            System.out.println(contributor.login + " (" + contributor.contributions + ")");
-        }
+                    @Override
+                    public void onNext(List<T> contributors) {
+                        for (T c: contributors)
+                            subscriber.onNext(c);
+                    }
+                };
+            }
+        };
     }
-
 }
