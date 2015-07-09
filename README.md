@@ -4,5 +4,7 @@
 ## Index
 * [Android Catalog](AndroidCatalog.md)
 * [iOS Catalog](iOSCatalog.md)
-* [Android Template Project](https://github.com/TimeInc/mad-hub/tree/templateproject-android)
-* [iOS Template Project](https://github.com/TimeInc/mad-hub/tree/master/TemplateWidget-iOS)
+* [Android Project Template](https://github.com/TimeInc/mad-hub/tree/templateproject-android)
+* [iOS Project Template](https://github.com/TimeInc/mad-hub/tree/master/TemplateWidget-iOS)
+* [Android Widget Template](https://github.com/TimeInc/mad-hub/tree/templateproject-android)
+* [iOS Widget Template](https://github.com/TimeInc/mad-hub/tree/master/TemplateWidget-iOS)
