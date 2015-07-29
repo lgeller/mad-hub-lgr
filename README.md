@@ -4,13 +4,13 @@
 ## Index
 * [Android Catalog](AndroidCatalog.md)
 * [iOS Catalog](iOSCatalog.md)
-* [Android Project Template](https://github.com/TimeInc/mad-hub/tree/templateproject-android)
+* [Android Project Template new location](https://github.com/TimeInc/mad-project-template-android)
+* ~~[Android Project Template](https://github.com/TimeInc/mad-hub/tree/templateproject-android)~~
 * [iOS Project Template](https://github.com/TimeInc/mad-project-template-ios)
 * [Android Widget Template](https://github.com/TimeInc/mad-widget-template-android)
 * [iOS Widget Template](https://github.com/TimeInc/mad-widget-template-ios)
 * [iOS Pod Specs Repo](https://github.com/TimeInc/mad-specs)
 * [iOS Whats Up Label Widget](https://github.com/TimeInc/mad-whats-up-label-ios)
-* [Android Project Template new location](https://github.com/TimeInc/mad-project-template-android)
 
 
 
