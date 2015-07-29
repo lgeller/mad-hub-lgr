@@ -10,4 +10,7 @@
 * [iOS Widget Template](https://github.com/TimeInc/mad-widget-template-ios)
 * [iOS Pod Specs Repo](https://github.com/TimeInc/mad-specs)
 * [iOS Whats Up Label Widget](https://github.com/TimeInc/mad-whats-up-label-ios)
+* [Android Project Template new location](https://github.com/TimeInc/mad-project-template-android)
+
+
 
